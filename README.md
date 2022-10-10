@@ -4,3 +4,17 @@ List of all Polish voivodships:
 
 - Greater Poland
 - Warmia-Masuria
+- Świętokrzyskie Voivodeship,
+- Subcarpathia,
+- Silesia,
+- Pomerania,
+- Podlaskie,
+- Opole,
+- Masovia,
+- Lubusz,
+- Lublin,
+- Lower Silesia,
+- Łódź,
+- Lesser Poland,
+- Kuyavia-Pomerania,
+- West Pomerania,
