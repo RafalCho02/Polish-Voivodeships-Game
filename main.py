@@ -10,25 +10,25 @@ turtle.shape(image)
 
 data = pandas.read_csv("16_voivodeships.csv")
 all_voivodeships = data.voivodeship.to_list()
-guessed_voivodships = []
+guessed_voivodeships = []
 
 
 
 game_is_on = True
 while game_is_on:
-    answer_voivodeship = screen.textinput(title=f"{len(guessed_voivodships)}/16 Voivodships Correct", prompt="What's another voivodeship's name?\n "
+    answer_voivodeship = screen.textinput(title=f"{len(guessed_voivodeships)}/16 Voivodeships Correct", prompt="What's another voivodeship's name?\n "
                                                                                              "If you want left print Left").title()
 
     if answer_voivodeship == 'Left':
-        missing_voivodeships = [voivodeship for voivodeship in all_voivodeships if voivodeship not in guessed_voivodships]
+        missing_voivodeships = [voivodeship for voivodeship in all_voivodeships if voivodeship not in guessed_voivodeships]
         new_data = pandas.DataFrame(missing_voivodeships)
         new_data.to_csv("Voivodeships_to_learn.csv")
         break
-    if len(guessed_voivodships) >= 16:
+    if len(guessed_voivodeships) >= 16:
         game_is_on = False
         screen.textinput(title='Congratulations',prompt='🎂🎂🎂🎂🎂🎂🎂🎂🎂 \nCongratulations you have guessed\nall 16 polish Voivodeships!\n 🎂🎂🎂🎂🎂🎂🎂🎂🎂')
     elif answer_voivodeship in all_voivodeships:
-        guessed_voivodships.append(answer_voivodeship)
+        guessed_voivodeships.append(answer_voivodeship)
         t = turtle.Turtle()
         t.hideturtle()
         t.penup()
