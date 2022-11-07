@@ -22,5 +22,3 @@ List of all Polish Voivodeships:
 - Lesser Poland,
 - Kuyavia-Pomerania,
 - West Pomerania,
-
-
